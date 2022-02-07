@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Touch-nums</title>
+</head>
+
+<body>
+    <h1>Touch-nums</h1>
+    <div class="container">
+        <div class="stopwatch">
+            <div id="display">
+                <span id="seconds">00</span> .
+                <span id="milliseconds">000</span>
+            </div>
+          </div>
+        Choose your level:
+        <div class="buttons">
+            <button onclick="initGame(4)">Easy</button>
+            <button onclick="initGame(5)">Hard</button>
+            <button onclick="initGame(6)">Extreme</button>
+        </div>
+    </div>
+    <table cellpadding="10">
+        <tbody class="board"></tbody>
+    </table>
+
+    <script src="util.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
